@@ -1,0 +1,27 @@
+{
+  "name": "allons-y-media",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeCorico/allons-y-media.git"
+  },
+  "author": "CodeCorico <hello@codecorico.com>",
+  "bugs": {
+    "url": "https://github.com/CodeCorico/allons-y-media/issues"
+  },
+  "homepage": "https://github.com/CodeCorico/allons-y-media",
+  "engines": {
+    "node": ">=4.1",
+    "npm": ">=3.2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "busboy": "^0.2.13",
+    "events-manager": "^1.1.2",
+    "extend": "^3.0.0",
+    "fs-extra": "^0.30.0",
+    "node-uuid": "^1.4.7"
+  }
+}
