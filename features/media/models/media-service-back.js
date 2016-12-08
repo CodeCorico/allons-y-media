@@ -31,17 +31,20 @@ module.exports = function() {
 
         busboy.on('file', function(fieldname, file, filename) {
           var ext = filename.split('.').pop(),
-              newFilename = uuid.v1() + '.' + ext;
+              newFilename = uuid.v1() + '.' + ext,
+              dir = newFilename.substr(0, 2);
 
-          url += newFilename;
+          url += dir + '/' + newFilename;
 
           name = filename.split('.');
           name.pop();
           name = name.join('.');
 
           fields.fileName = newFilename;
-          fields.fileUrl = '/media/' + newFilename;
-          fields.filePath = path.join(_mediaFolder, newFilename);
+          fields.fileUrl = '/media/' + dir + '/' + newFilename;
+          fields.filePath = path.join(_mediaFolder, dir, newFilename);
+
+          fs.ensureDirSync(path.join(_mediaFolder, dir));
 
           file.pipe(fs.createWriteStream(fields.filePath));
         });
