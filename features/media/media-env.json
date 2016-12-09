@@ -1,0 +1,9 @@
+{
+  "env": [{
+    "type": "confirm",
+    "name": "MEDIA_BACKUP",
+    "message": "Backup your uploaded media:",
+    "default": true,
+    "when": "BACKUP=true"
+  }]
+}

@@ -69,6 +69,16 @@ module.exports = function() {
         $req.pipe(busboy);
       };
 
+      this.backup = function($backupPath, $addDestination, $done) {
+        var dest = path.join($backupPath, 'media');
+
+        fs.copySync(_mediaFolder, dest);
+
+        $addDestination(dest);
+
+        $done();
+      };
+
     })();
 
   });
