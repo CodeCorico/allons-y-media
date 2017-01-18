@@ -1,8 +1,5 @@
 'use strict';
 
-var path = require('path');
-require(path.resolve(__dirname, '../models/media-service-back.js'))();
-
 module.exports = [{
   method: 'POST',
   url: 'media',

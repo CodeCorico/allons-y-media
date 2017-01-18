@@ -5,6 +5,8 @@ module.exports = function($server) {
       fs = require('fs-extra'),
       mediaFolder = path.resolve('media');
 
+  require(path.resolve(__dirname, 'models/media-service-back.js'))();
+
   fs.ensureDirSync(path.resolve('media'));
 
   function _sendFile(req, res, filename) {
