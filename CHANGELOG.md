@@ -1,3 +1,9 @@
+<a name="1.0.3"></a>
+# [1.0.3](https://github.com/CodeCorico/allons-y-media/compare/1.0.2...1.0.3) (2017-01-18)
+
+### Bug Fixes
+* **media express:** become more prioritized [#246173d](https://github.com/CodeCorico/allons-y-media/commit/246173d)
+
 <a name="1.0.2"></a>
 # [1.0.2](https://github.com/CodeCorico/allons-y-media/compare/1.0.1...1.0.2) (2017-01-18)
 
