@@ -1,3 +1,9 @@
+<a name="1.0.2"></a>
+# [1.0.2](https://github.com/CodeCorico/allons-y-media/compare/1.0.1...1.0.2) (2017-01-18)
+
+### Bug Fixes
+* **media:** require $MediaService file when express starts [#a0d50fc](https://github.com/CodeCorico/allons-y-media/commit/a0d50fc)
+
 <a name="1.0.1"></a>
 # [1.0.1](https://github.com/CodeCorico/allons-y-media/compare/1.0.0...1.0.1) (2016-12-09)
 
