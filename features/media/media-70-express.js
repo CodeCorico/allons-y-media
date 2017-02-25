@@ -10,11 +10,8 @@ module.exports = function($server) {
   fs.ensureDirSync(path.resolve('media'));
 
   function _sendFile(req, res, filename) {
-    var sendFile = false;
-
     if (fs.existsSync(filename)) {
       res.sendFile(filename);
-      sendFile = filename;
     }
     else {
       res
@@ -26,6 +23,6 @@ module.exports = function($server) {
   }
 
   $server.use('/media', function(req, res) {
-    _sendFile(req, res, path.join(mediaFolder, req.path));
+    _sendFile(req, res, path.join(mediaFolder, decodeURI(req.path)));
   });
 };
