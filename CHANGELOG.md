@@ -1,3 +1,9 @@
+<a name="1.0.4"></a>
+# [1.0.4](https://github.com/CodeCorico/allons-y-media/compare/1.0.3...1.0.4) (2017-02-26)
+
+### Bug Fixes
+* **media express:** use decodeUI to decode the path url [#d688cf3](https://github.com/CodeCorico/allons-y-media/commit/d688cf3)
+
 <a name="1.0.3"></a>
 # [1.0.3](https://github.com/CodeCorico/allons-y-media/compare/1.0.2...1.0.3) (2017-01-18)
 
